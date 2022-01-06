@@ -58,7 +58,17 @@
         <input type="text" name="asunto" id="asunto" required>
         <label for="descripcion">Descripción</label>
         <textarea name="descripcion" id="descripcion" required></textarea>
-        <input type="submit" value="ENVIAR" class="btn" onclick="enviardatos()">
+        <div class="div__captcha">
+          <p class="captcha">
+            <script>crear_captcha();</script>
+            </p>
+          <a class="btn__captcha" href="#" onclick="crear_captcha()"><i class="fas fa-sync-alt"></i></a>
+        </div>
+
+      <input type="text" name="captcha" id="captcha" title="Captcha" placeholder="Introduzca los caracteres."
+        >
+      <p class="error"></p>
+      <input type="submit" value="ENVIAR" class="btn" onclick="valida_captcha();">
       </form>
     </div>
   </main>

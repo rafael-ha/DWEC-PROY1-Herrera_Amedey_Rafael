@@ -35,7 +35,7 @@
           <a href="registro.html">REGISTRO</a>
         </nav>
       </section>
-      
+
     </section>
     <nav class="nav__movil">
       <ul>
@@ -56,8 +56,19 @@
           pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Letras y números. Tamaño minimo: 8. Requerido">
         <input type="password" name="rep_contraseña" id="repasswd" placeholder="Repita contraseña"
           pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Letras y números. Tamaño minimo: 8. Requerido">
+          
+          <div class="div__captcha">
+            <p class="captcha">
+              <script>crear_captcha();</script>
+              </p>
+            <a class="btn__captcha" href="#" onclick="crear_captcha()"><i class="fas fa-sync-alt"></i></a>
+          </div>
+
+        <input type="text" name="captcha" id="captcha" title="Captcha" placeholder="Introduzca los caracteres."
+          >
         <p>Si tienes cuenta,<a href="acceso.html">inicia sesion.</a></p>
-        <input type="submit" value="REGISTRAR" class="btn" onclick="valida_registro()">
+        <p class="error"></p>
+        <input type="submit" value="REGISTRAR" class="btn" onclick="valida_captcha();">
       </form>
     </div>
   </main>
