@@ -12,6 +12,17 @@ document.addEventListener("DOMContentLoaded", function () {
     btn.addEventListener('click', () => {
         nav1.classList.toggle('show');
     });
+    // Evento que se ejecuta cuando se hace click en los corazones de los pilotos.
+    let corazones = document.querySelectorAll(".fa-heart");
+    corazones.forEach(corazon => corazon.addEventListener('click', () => {
+        if (corazon.className = "far fa-heart") {
+            corazon.style.color = "#ee1c08";
+            corazon.className = "fas fa-heart";
+        } else {
+            corazon.style.color = "black";
+            corazon.className = "far fa-heart";
+        }
+    }));
 });
 
 // Funcion que recoge datos del contacto.
@@ -107,7 +118,7 @@ function valida_captcha() {
         error.innerHTML = "Introduce los caracteres del captcha.";
         input_captcha.focus();
         return;
-    // Comprobamos si los caracteres introducidos coinciden con el captcha pregenerado.
+        // Comprobamos si los caracteres introducidos coinciden con el captcha pregenerado.
     } else if (input_captcha_formateado != captchaTexto) {
         error.innerHTML = "Los caracteres no coinciden.";
         input_captcha.focus();
@@ -116,7 +127,7 @@ function valida_captcha() {
         error.innerHTML = "Captcha correcto."; // Escribimos que el captcha introducido es correcto.
         console.log("Captcha correcto.");
         // Comprobamos si el boton para enviar los datos es el de contacto.html o registro.html
-        if (last_input.value == "ENVIAR") { 
+        if (last_input.value == "ENVIAR") {
             enviardatos();
         } else {
             valida_registro();
