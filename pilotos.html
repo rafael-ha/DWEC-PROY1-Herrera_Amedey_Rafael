@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pilotos</title>
     <link rel="stylesheet" href="css/style_pilotos.css">
+    <script src="js/pilotos.js"></script>
     <script src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/7cbcbc8d34.js" crossorigin="anonymous"></script>
 </head>
@@ -14,39 +15,39 @@
 <body>
     <header class="bg-rojo-principal">
         <section class="sectionheader__main">
-          <a href="index.html" class="logo__desktop"><img src="img/logo.png" alt="Logo" /></a>
-          <a href="index.html" class="logo__movil"><img src="img/logo_movil.png" alt="Logo" /></a>
-          <button class="hamburger">
-            <i class="fas fa-bars"></i>
-          </button>
-          <section class="header__section header__section--left">
-            <nav class="section__nav">
-              <a href="carreras.html">CARRERAS</a>
-              <a href="pilotos.html">PILOTOS</a>
-              <a href="mundiales.html">MUNDIALES</a>
-            </nav>
-          </section>
-          <section class="header__section header__section--right">
-            <div class="inner-addon right-addon">
-              <input type="text" class="form-control" placeholder="BÚSQUEDA" />
-            </div>
-            <nav class="section__nav">
-              <a href="acceso.html">ACCESO</a>
-              <a href="registro.html">REGISTRO</a>
-            </nav>
-          </section>
-          
+            <a href="index.html" class="logo__desktop"><img src="img/logo.png" alt="Logo" /></a>
+            <a href="index.html" class="logo__movil"><img src="img/logo_movil.png" alt="Logo" /></a>
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <section class="header__section header__section--left">
+                <nav class="section__nav">
+                    <a href="carreras.html">CARRERAS</a>
+                    <a href="pilotos.html">PILOTOS</a>
+                    <a href="mundiales.html">MUNDIALES</a>
+                </nav>
+            </section>
+            <section class="header__section header__section--right">
+                <div class="inner-addon right-addon">
+                    <input type="text" class="form-control" placeholder="BÚSQUEDA" />
+                </div>
+                <nav class="section__nav">
+                    <a href="acceso.html">ACCESO</a>
+                    <a href="registro.html">REGISTRO</a>
+                </nav>
+            </section>
+
         </section>
         <nav class="nav__movil">
-          <ul>
-            <li><a href="carreras.html">Carreras</a></li>
-            <li><a href="pilotos.html">Pilotos</a></li>
-            <li><a href="mundiales.html">Mundiales</a></li>
-            <li><a href="acceso.html">Acceso</a></li>
-            <li><a href="registro.html">Registro</a></li>
-          </ul>
+            <ul>
+                <li><a href="carreras.html">Carreras</a></li>
+                <li><a href="pilotos.html">Pilotos</a></li>
+                <li><a href="mundiales.html">Mundiales</a></li>
+                <li><a href="acceso.html">Acceso</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
         </nav>
-      </header>
+    </header>
     <main>
         <div class="main__div">
             <section class="div__section div__section--filtros">
@@ -92,6 +93,7 @@
                     <section class="section__tablas">
                         <div class="tg-wrap">
                             <table class="tg">
+                                <script>setHamiltonStats();</script>
                                 <colgroup>
                                     <col>
                                     <col>
@@ -100,34 +102,35 @@
                                     <col>
                                     <col>
                                 </colgroup>
-                                <tbody>
+                                <tbody class="table__hamilton">
                                     <tr>
                                         <th class="th__principal" colspan="2">Mundiales</th>
                                         <td colspan="2" class="th__secundario">Victorias</td>
                                         <td>Edad</td>
-                                        <td>36</td>
+                                        <td></td>
                                     </tr>
                                     <tr>
-                                        <th colspan="2" rowspan="3" class="td__principal">7</th>
-                                        <td colspan="2" class="td__secundario">100</td>
+                                        <th colspan="2" rowspan="3" class="td__principal"></th>
+                                        <td colspan="2" class="td__secundario"></td>
                                         <td>Pais</td>
                                         <td>Reino Unido</td>
                                     </tr>
                                     <tr>
                                         <td colspan="2" class="th__secundario">Poles</th>
                                         <td>Carreras</td>
-                                        <td>282</td>
+                                        <td></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2" class="td__secundario">101</td>
+                                        <td colspan="2" class="td__secundario"></td>
                                         <td>Escuderia</td>
-                                        <td>Mercedes</td>
+                                        <td></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div class="tg-wrap">
                             <table class="tg">
+                                <script>setSchumacherStats();</script>
                                 <colgroup>
                                     <col>
                                     <col>
@@ -136,34 +139,35 @@
                                     <col>
                                     <col>
                                 </colgroup>
-                                <tbody>
+                                <tbody class="table__schumacher">
                                     <tr>
                                         <th class="th__principal" colspan="2">Mundiales</th>
                                         <td colspan="2" class="th__secundario">Victorias</td>
                                         <td>Edad</td>
-                                        <td>36</td>
+                                        <td></td>
                                     </tr>
                                     <tr>
-                                        <th colspan="2" rowspan="3" class="td__principal">7</th>
-                                        <td colspan="2" class="td__secundario">100</td>
+                                        <th colspan="2" rowspan="3" class="td__principal"></th>
+                                        <td colspan="2" class="td__secundario"></td>
                                         <td>Pais</td>
-                                        <td>Reino Unido</td>
+                                        <td>Alemania</td>
                                     </tr>
                                     <tr>
                                         <td colspan="2" class="th__secundario">Poles</th>
                                         <td>Carreras</td>
-                                        <td>282</td>
+                                        <td></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2" class="td__secundario">101</td>
+                                        <td colspan="2" class="td__secundario"></td>
                                         <td>Escuderia</td>
-                                        <td>Mercedes</td>
+                                        <td></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div class="tg-wrap">
                             <table class="tg">
+                                <script>setVettelStats();</script>
                                 <colgroup>
                                     <col>
                                     <col>
@@ -172,34 +176,35 @@
                                     <col>
                                     <col>
                                 </colgroup>
-                                <tbody>
+                                <tbody class="table__vettel">
                                     <tr>
                                         <th class="th__principal" colspan="2">Mundiales</th>
                                         <td colspan="2" class="th__secundario">Victorias</td>
                                         <td>Edad</td>
-                                        <td>36</td>
+                                        <td></td>
                                     </tr>
                                     <tr>
-                                        <th colspan="2" rowspan="3" class="td__principal">7</th>
-                                        <td colspan="2" class="td__secundario">100</td>
+                                        <th colspan="2" rowspan="3" class="td__principal"></th>
+                                        <td colspan="2" class="td__secundario"></td>
                                         <td>Pais</td>
-                                        <td>Reino Unido</td>
+                                        <td>Alemania</td>
                                     </tr>
                                     <tr>
                                         <td colspan="2" class="th__secundario">Poles</th>
                                         <td>Carreras</td>
-                                        <td>282</td>
+                                        <td></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2" class="td__secundario">101</td>
+                                        <td colspan="2" class="td__secundario"></td>
                                         <td>Escuderia</td>
-                                        <td>Mercedes</td>
+                                        <td></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div class="tg-wrap">
                             <table class="tg">
+                                <script>setProstStats();</script>
                                 <colgroup>
                                     <col>
                                     <col>
@@ -208,28 +213,28 @@
                                     <col>
                                     <col>
                                 </colgroup>
-                                <tbody>
+                                <tbody class="table__prost">
                                     <tr>
                                         <th class="th__principal" colspan="2">Mundiales</th>
                                         <td colspan="2" class="th__secundario">Victorias</td>
                                         <td>Edad</td>
-                                        <td>36</td>
+                                        <td></td>
                                     </tr>
                                     <tr>
-                                        <th colspan="2" rowspan="3" class="td__principal">7</th>
-                                        <td colspan="2" class="td__secundario">100</td>
+                                        <th colspan="2" rowspan="3" class="td__principal"></th>
+                                        <td colspan="2" class="td__secundario"></td>
                                         <td>Pais</td>
-                                        <td>Reino Unido</td>
+                                        <td>Francia</td>
                                     </tr>
                                     <tr>
                                         <td colspan="2" class="th__secundario">Poles</th>
                                         <td>Carreras</td>
-                                        <td>282</td>
+                                        <td></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2" class="td__secundario">101</td>
+                                        <td colspan="2" class="td__secundario"></td>
                                         <td>Escuderia</td>
-                                        <td>Mercedes</td>
+                                        <td></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -254,28 +259,28 @@
                                         <col>
                                         <col>
                                     </colgroup>
-                                    <tbody>
+                                    <tbody class="table__hamilton">
                                         <tr>
                                             <th class="th__principal" colspan="2">Mundiales</th>
                                             <td colspan="2" class="th__secundario">Victorias</td>
                                             <td>Edad</td>
-                                            <td>36</td>
+                                            <td></td>
                                         </tr>
                                         <tr>
-                                            <th colspan="2" rowspan="3" class="td__principal">7</th>
-                                            <td colspan="2" class="td__secundario">100</td>
+                                            <th colspan="2" rowspan="3" class="td__principal"></th>
+                                            <td colspan="2" class="td__secundario"></td>
                                             <td>Pais</td>
                                             <td>Reino Unido</td>
                                         </tr>
                                         <tr>
                                             <td colspan="2" class="th__secundario">Poles</th>
                                             <td>Carreras</td>
-                                            <td>282</td>
+                                            <td></td>
                                         </tr>
                                         <tr>
-                                            <td colspan="2" class="td__secundario">101</td>
+                                            <td colspan="2" class="td__secundario"></td>
                                             <td>Escuderia</td>
-                                            <td>Mercedes</td>
+                                            <td></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -298,28 +303,28 @@
                                         <col>
                                         <col>
                                     </colgroup>
-                                    <tbody>
+                                    <tbody class="table__schumacher">
                                         <tr>
                                             <th class="th__principal" colspan="2">Mundiales</th>
                                             <td colspan="2" class="th__secundario">Victorias</td>
                                             <td>Edad</td>
-                                            <td>36</td>
+                                            <td></td>
                                         </tr>
                                         <tr>
-                                            <th colspan="2" rowspan="3" class="td__principal">7</th>
-                                            <td colspan="2" class="td__secundario">100</td>
+                                            <th colspan="2" rowspan="3" class="td__principal"></th>
+                                            <td colspan="2" class="td__secundario"></td>
                                             <td>Pais</td>
                                             <td>Reino Unido</td>
                                         </tr>
                                         <tr>
                                             <td colspan="2" class="th__secundario">Poles</th>
                                             <td>Carreras</td>
-                                            <td>282</td>
+                                            <td></td>
                                         </tr>
                                         <tr>
-                                            <td colspan="2" class="td__secundario">101</td>
+                                            <td colspan="2" class="td__secundario"></td>
                                             <td>Escuderia</td>
-                                            <td>Mercedes</td>
+                                            <td></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -341,28 +346,28 @@
                                         <col>
                                         <col>
                                     </colgroup>
-                                    <tbody>
+                                    <tbody class="table__vettel">
                                         <tr>
                                             <th class="th__principal" colspan="2">Mundiales</th>
                                             <td colspan="2" class="th__secundario">Victorias</td>
                                             <td>Edad</td>
-                                            <td>36</td>
+                                            <td></td>
                                         </tr>
                                         <tr>
-                                            <th colspan="2" rowspan="3" class="td__principal">7</th>
-                                            <td colspan="2" class="td__secundario">100</td>
+                                            <th colspan="2" rowspan="3" class="td__principal"></th>
+                                            <td colspan="2" class="td__secundario"></td>
                                             <td>Pais</td>
                                             <td>Reino Unido</td>
                                         </tr>
                                         <tr>
                                             <td colspan="2" class="th__secundario">Poles</th>
                                             <td>Carreras</td>
-                                            <td>282</td>
+                                            <td></td>
                                         </tr>
                                         <tr>
-                                            <td colspan="2" class="td__secundario">101</td>
+                                            <td colspan="2" class="td__secundario"></td>
                                             <td>Escuderia</td>
-                                            <td>Mercedes</td>
+                                            <td></td>
                                         </tr>
                                     </tbody>
                                 </table>
